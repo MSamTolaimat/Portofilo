@@ -1,0 +1,536 @@
+/* basic colors and measurment on the site  */
+
+:root{
+    --primaryColor :#ed8b2e;
+    --secondlyColor : #3f067d ;
+    --thirdColoor :#377ea1;
+    --lightColor :#1f1f1f ;
+    --bgColor-1 : rgb(252, 254, 237);
+    --bgColor-2 :#abc270;
+    --padding : 8%;
+} 
+
+               /* basic measurment on all itmes  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+               /* basic design on the site  */
+
+html{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+    color: var(--lightColor);
+    
+} 
+
+               /* basic measurment on the h1  */
+
+h1 {
+    font-size: 4.65rem;
+    margin: 1.7rem 0;
+    color: var(--lightColor);
+ }
+
+               /* basic measurment on the h2  */
+
+h2 {
+    font-size: 2.6rem;
+    letter-spacing: 0.12rem;
+    cursor: pointer;
+    color: var(--lightColor);
+ }
+
+               /* basic measurment on the h3  */
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 3.5rem;
+    color: var(--lightColor);
+ }
+
+               /* basic measurment on the h4  */
+
+h4 {
+    font-size: 1.25;
+    letter-spacing: 0.12rem;
+    color: var(--secondlyColor);
+ }
+
+               /* basic measurment on the h5  */
+
+ h5{
+    font-size: 1.37rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+ }
+
+               /* basic measurment on the p  */
+
+p{
+    color: var(--secondlyColor);
+    letter-spacing: 1px;
+    line-height: 1.8rem;
+    font-size: 1rem;
+}
+
+               /* basic measurment on the span  */
+
+span {
+    color: var(--primaryColor);
+ }
+
+
+              /* ---------------------------------------------
+               ---------------Home section -------------------
+               ------------------------------------------------ */
+
+
+nav {
+   padding: 2.8rem var(--padding) 0 var(--padding);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+               /* to remove featchers of list  */
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+ }
+
+               /* to remove featchers of link  */
+
+nav ul li a {
+    color : var(--lightColor);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.4s;
+ }
+
+               /* to change color of nav  */
+
+nav ul li a:hover{
+    color: var(--primaryColor);
+ }
+
+               /* feachers of home page  */
+
+.home {
+    width : 100%;
+    height :100vh;
+    background-color: var(--bgColor-1);
+    display: flex;
+    flex-direction: column;
+}
+
+               /* feachers of bottom  */
+
+.btn{
+    background-color: var(--primaryColor);
+    color: var(--lightColor);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.81rem 0.87rem;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    transition: 0.4s;
+ }
+
+               /* change color of bottom  */
+
+.btn:hover{
+    background-color: transparent;
+    border: 2px solid var(--primaryColor)
+ }
+
+.content{
+    flex-grow: 1;
+    padding: 0 var(--padding);
+    display: flex;
+    align-items: center;
+ }
+
+.content-text{
+    position: relative;
+    bottom: 70px;
+    left: 300px;
+    bottom: -20px;
+ }
+
+                               /* contact feachers of socialmedia */
+
+.social{
+    margin-top: 3.5rem;
+ }
+ .social img{
+    margin-right: 2rem;
+    width : 2.5rem;
+    transition: 0.4s;
+  
+ }
+ .social a{
+   text-decoration: none;
+ }
+ .social img:hover{
+    transform: scale(1.2);
+}
+
+                                 /* this for images in home  */
+
+#home .container-images{
+    width: 45%;
+    height: 90%;
+    position: relative;
+    left: 260px;
+    bottom: 50px;
+    transition: left 1s ease;
+   
+ }
+
+ #home .container-images img{
+   /* position: absolute; */
+    height: 100%;
+    transform: translateX(-50%);
+
+
+ }
+ #home .container-images:hover{
+    left: 290px;
+    
+ }
+ 
+
+/* ---------------------------------------------
+---------------About section -------------------
+------------------------------------------------ */
+
+
+ .about{
+    background-color: var(--bgColor-2);
+    padding: 2rem var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ }
+ .about .content-text{
+    width: 35%;
+ }
+ .about .container-images img{
+    width :45%;
+ }
+
+/* ---------------------------------------------
+---------------services section -------------------
+------------------------------------------------ */
+
+
+ .services{
+    background-color: var(--bgColor-1);
+    padding: 2px var(--padding);
+ }
+ .text-center{
+    text-align: center;
+ }
+ .box{
+   display: flex;
+   justify-content: space-around;
+ }
+ .card{
+   width: 300px;
+   background-color: var(--bgColor-2);
+   border-radius:20px ;
+   padding: 1.3rem 2rem;
+   text-align: center;
+ }
+ .card{
+   font-size:3.12rem ;
+   text-align: center;
+   color: var(--primaryColor);
+   margin: 2rem ;
+ }
+ .card i{
+   color: var(--thirdColoor);
+ }
+ #menu{
+   display: none;
+ }
+
+/* ---------------------------------------------
+---------------Skills section -------------------
+------------------------------------------------ */
+
+
+ .skills{
+   background-color: var(--bgColor-2);
+    padding: 2rem var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ .skills .container-images{
+   width: 35%;
+ }
+ 
+.skills .container-images img{
+   width :90%;
+}
+.skills .container-skills{
+   width: 40%;
+} 
+.content-skills {
+   display:flex;
+   flex-wrap: wrap;
+}
+.skill{
+   width: 100px;
+   height: 100px;
+   background-color: var(--lightColor);
+   border-radius: 40%;
+   margin: 0 2rem 2rem 0;
+   display: flex;
+   align-items: center;
+   justify-content:center ;
+}
+
+
+/* ---------------------------------------------
+---------------Footer section ------------------
+------------------------------------------------ */
+
+
+footer{
+   padding:  2rem var(--padding);
+   background-color: var(--bgColor-1);
+}
+footer .content-footer{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+footer .content-footer p{
+   color: var(--lightColor);
+   text-align:center;
+   width: 500px;
+   margin-top:1rem ;
+}
+footer .content-footer .end{
+   color: var(--primaryColor);
+   margin-top:1rem ;
+} 
+
+/* --------------------------------------
+ ----------------menu--------------------
+ ----------------------------------------- */
+
+
+#menu{
+   position:relative ;
+   appearance: none;
+   border: none;
+   background-color: transparent;
+   outline: none;
+   cursor: pointer;
+   user-select: none;
+}
+#menu span {
+   display: block;
+   width :33px;
+   height: 4px;
+   background-color: var(--lightColor);
+   border-radius: 6px;
+   transform-origin: 0.0;
+   transition: 0.4s;
+   margin-bottom: 5px ;
+}
+#menu.is-active span:nth-child(1){
+   transform: translate(0px , -2px) rotate(45deg);
+   
+}
+#menu.is-active span:nth-child(2){
+   opacity: 0;
+   transform: translateX(15px);
+}
+#menu.is-active span:nth-child(3){
+   transform: translate(-3px , 3px) rotate(-45deg);
+}
+#menu.is-active span{
+   background-color: var(--primaryColor);
+}
+
+                 /* this for dark mode bottom  */
+
+#darkModeBottom {
+   width: 25%; 
+   background-color: transparent;
+   border:none ;
+   padding: 0;
+   margin: 0;
+   display: inline;
+   border-radius: 50%;
+   cursor: pointer;
+    /* transition: 0.4s;/ */
+}
+#darkModeBottom img{
+   width: 25%;
+   margin-left: 150px;
+   margin-right: 0px;
+   
+}
+.darkMode{
+   --lightColor : #fffff6;
+   --bgColor-1 : #171a1c ;
+   --bgColor-2 : #232323 ;
+   --secondlyColor :#767272 ;
+   --thirdColoor :#2daffa;
+   --primaryColor :rgb(23, 165, 75);
+}
+/* ---------------------------------------------
+---------------Media section -------------------
+------------------------------------------------ */
+
+/* this  to remove pic, text to the left nd dark mode bottom to the right   */
+        /* phone in landscape mode  */
+
+@media screen  and (max-width : 1050px) and (min-width:700px ){
+   :root{
+      --padding :1.5rem;
+   }
+   html{ 
+      font-size: 13px;
+   }
+    .home .container-images{
+      display: none; 
+   }
+   #darkModeBottom img{
+      width: 25%;
+      margin-left: 80px;
+      margin-right: 0px;
+      
+   }
+   .content-text{
+      position: relative;
+      bottom: 70px;
+      left: 120px;
+      bottom: -40px;
+   }
+
+}
+
+/* this to remove pic, nav, and take the text to the left  */
+                 /* phone in portait mode and ipad  */
+                 
+@media screen  and ( max-width: 420px){
+   :root{
+      --padding :1.5rem;
+   }
+   html{ 
+      font-size: 13px;
+   }
+    .home .container-images{
+      display: none; 
+   }
+   
+   nav{
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 82px;
+      padding-top: 20px;
+      background-color: var(--bgColor-1);
+      border-bottom: 1px solid var(--bgColor-2);
+      z-index: 100;
+   }
+      
+    nav > a{
+      display: none;
+   }
+   nav ul{
+      display: none;
+      position: fixed;
+      top:0;
+      left :0;
+      width: 100vw;
+      height: 100vh;
+      background-color: var(--bgColor-2);
+   } 
+   nav ul.is-active{
+      display: block;
+   }
+   nav ul li {
+      display: block;
+      text-align: center;
+      margin: 50px;
+   }
+   .content-text{
+      bottom: 0em;
+      left: 10px ;
+   }
+   .content-text h1 {
+      margin-top: 180px;
+      
+  }
+   .social {
+      margin-top: 70px;
+   }
+   h1{
+      text-align: center;
+   }
+   h3{
+      margin-bottom: 30px ;
+   }
+   #menu{
+      display: block;
+      left: 90px;
+   } 
+   .about .container-images{
+      display: none;
+   }
+   .about .container-texts{
+      width: 100%;
+   }
+   .box{
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+   }
+   .skills .container-images{
+      display: none;
+   }
+   .skills .container-skills{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+   }
+   .skills .container-skills .content-skills{
+      margin-top: 2rem;
+      align-items: center;
+      justify-content: center;
+   }
+   .skill{
+      width: 80px;
+      height: 80px;
+   }
+   footer .content-footer p{
+      width: 100%;
+
+   }
+   #darkModeBottom img{
+      width: 25%;
+      margin-left: 120px;
+      margin-right: 0px;
+      
+   }
+} 
+
+
+
